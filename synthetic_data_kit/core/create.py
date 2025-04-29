@@ -150,7 +150,6 @@ def process_file(
         
     elif content_type == "cot-enhance":
         from synthetic_data_kit.generators.cot_generator import COTGenerator
-        import json
         from tqdm import tqdm
         
         # Initialize the CoT generator
