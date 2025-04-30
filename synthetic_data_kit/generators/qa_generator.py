@@ -66,6 +66,12 @@ class QAGenerator:
         temperature = self.generation_config.get("temperature", 0.7)
         overlap = self.generation_config.get("overlap", 200)
         batch_size = self.generation_config.get("batch_size", 32)
+        print(
+            f"chunk_size = {chunk_size}\n"\
+            f"temperature = {temperature}\n"\
+            f"overlap = {overlap}\n"\
+            f"batch_size = {batch_size}\n"
+        )
         
         # Split text into chunks
         chunks = split_into_chunks(
